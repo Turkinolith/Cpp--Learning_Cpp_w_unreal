@@ -1,0 +1,131 @@
+To begin with in ths course, I'll do a basic game called "Triple X"
+Game Design Doc (GDD)
+* number puzzle game
+* Hacking into a computer lock
+* need to find valid combo of codes
+* starts easy, becomes harder
+* wrap in your own story
+
+This game is text based and a sample of the interface is as follows:
+
+`````````````````````````````````````````````````````
+
+"You're a secret agent breaking into a LEVEL 2 server room.
+Your superhacker 2000 tells you the following information...
+
++ There are three numbers in the code
++ The codes multiply to give 18
++ The codes add-up to 8
+
+Enter the three code numbers followed by x
+
+>3 3 2 x
+
+`````````````````````````````````````````````````````
+
+Why this game?
+* Learn basics of C++ syntax
+* learn about variables and constants
+* Create your own function with an argument.
+* Use #include ready for Unreal
+* Use if and while statements.
+
+
+----------------------------------------------------------------------------------------------------------
+
+*************************************
+**** Structure of C++ by example ****
+*************************************
+#include statements at the top
+
+2 large segments of indents, IE 2 functions.
+
+
+Every C++ program requires "int main()"
+its the entry point of a C++ program
+without it, the program will not build!
+
+As I suspected, int means integer
+int main() means it returns an integer.
+
+The main functions return value is used as an exit status to the OS.
+0 means its successful
+any other number means error, just like in a node.js program.
+
+Compiler ignores white space (like JS, unlike python)
+
+
+Preprocessor Directive:
+	An instruction to the compiler.
+	Used to include a library before compiling.
+	Want it at the start of the file.
+	# represents preprocessor directives.
+
+
+	#include <iostream>
+
+#include = preprocessor directive.
+<iostream> = Header File, file that contains code.
+Preprocessor files lines do not need a semicolon.
+
+
+The basic Hello World in C++
+`````````````````````````````````````````````````
+
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello, World!";
+    return 0;
+}
+
+
+Lets look at this line in more detail:
+	std::cout << "Hello, World!";
+	
+	
+std  is a Namespace
+
+	namespace::myfunction
+	or
+	namespace2::myfunction
+		*Their functions of the same name, but in different namespaces.
+Namespace is used to prevent name conflicts within the code.
+
+The two colons between std::cout are called a "Scope Operator"
+	When the scope operator is put next to the standard namespace we're telling the compiler to check for code inside the namespace.
+	In this case, its looking for the variable called "cout" in the "std" namespace.
+
+The two angled brackets allows me to output whatever is to the right of them to the terminal.
+
+
+	**text formatting - line breaks**
+If I try to print two long lines of text, they will by default be placed upon the same line.
+
+There are many ways to handle this.
+
+The way I used was to add the \n character at the end of a string like this:
+
+	#include <iostream>
+
+	int main()
+	{
+		std::cout << "You walk into the shadowy glade. A foreboding grey stone stands before you, runes adorning it.\n";
+		std::cout << "Suddenly the runes flash alight, a question appears. It demands your attention lest a terrible magic be unleashed upon you.\n";
+		return 0;
+	}
+
+I could also use the endline function from the standard library.
+	std::endl
+
+	#include <iostream>
+
+	int main()
+	{
+		std::cout << "You walk into the shadowy glade. A foreboding grey stone stands before you, runes adorning it.";
+		std::cout << std::endl;
+		std::cout << "Suddenly the runes flash alight, a question appears. It demands your attention lest a terrible magic be unleashed upon you.";
+		return 0;
+	}
+
