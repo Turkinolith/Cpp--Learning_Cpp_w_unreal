@@ -1,0 +1,41 @@
+******************************
+**** Variable Declaration ****
+******************************
+
+to declare a variable you have to give it a data type, then the variable name.
+	int a = 0;
+setting the variable to a value when it is declared is "initializing" it.
+	int a 
+would be an unintialized variable
+
+Printing out the value of a to the console can be done like this:
+	std::cout << a;
+	
+You can chain statements together:
+IE: 
+	int val_a = 4;
+    int val_b = 4;
+    int val_c = 4;
+	int sum = val_a + val_b + val_c;
+	int product = val_a * val_b * val_c;
+
+    std::cout << std::endl;
+	std::cout << sum << std::endl;
+	std::cout << product << std::endl;
+	
+Or just do it inline:
+
+	int val_a = 4;
+    int val_b = 4;
+    int val_c = 4;
+
+    std::cout << std::endl;
+	std::cout << val_a + val_b + val_c << std::endl;
+	std::cout << val_a * val_b * val_c << std::endl;
+
+
+C++ supports constants!
+Just like in JS, begin them with "const" but keep the type declaration.
+	const int val_a = 4;
+
+
