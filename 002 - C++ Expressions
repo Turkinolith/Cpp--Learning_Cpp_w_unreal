@@ -1,0 +1,31 @@
+***********************************
+**** C++ Expression Statements ****
+***********************************
+
+What makes a line of code an expression statement?
+the fact it has a semicolon on the end of the expression.
+Examples of expressions are:
+    std::cout << "You walk into the shadowy glade. A foreboding grey stone stands before you, runes adorning it.";
+    std::cout << std::endl;
+    std::cout << "Suddenly the runes flash alight, a question appears. It demands your attention lest a terrible magic be unleashed upon you.";
+	
+	or
+	
+	std::cout << std::endl;
+    std::cout << sum << std::endl;
+    std::cout << product << std::endl;
+
+
+What other lines of code are there? 
+
+Declaration Statements - code that declares something, like a variable.
+
+Preprocessor Directive
+
+Main Function
+
+Return Statements
+
+
+***UNREAL ENGINE SPECIFIC***
+variable names are in Pascal Case
